@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <h1>Apartments</h1>
+    <div>
+        {% for i in what %}
+        <div> {{i}} </div>
+        {%endfor%}
+    </div>
+    <form action = "create"> 
+        <input type = "submit" value = "create an apartment">
+        </input>
+
+    </form>
+    <form action = "update"> 
+        <input type = "submit" value = "update an apartment">
+        </input>
+
+    </form>
+    <form action = "erase"> 
+        <input type = "submit" value = "erase an apartment">
+        </input>
+
+    </form>
+    <form action = "list"> 
+        <input type = "submit" value = "see list of apartments">
+        </input>
+
+    </form>
+    <form method = "post">
+        <label>
+            Tenant Name
+            <input name = "tenant_name">
+        </label>
+        <input type = "submit">
+    </input>
+    </form>
+</html>
